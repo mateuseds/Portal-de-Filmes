@@ -5,32 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
 
     <title>Portal de Filmes</title>
-    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body>
     <div>
         <nav class="header navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-
                 <a class="navbar-brand">
-                    <img src="assets\puc_filmes.png" alt="Logo do site" class="header__logo">
+                    <img src="assets/puc_filmes.png" alt="Logo do site" class="header__logo" />
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-
                     <nav class="navbar-nav me-auto mb-2 mb-md-0">
                         <a class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#lancamentos">Lançamentos</a>
+                            <a class="nav-link" aria-current="page" href="#lancamentos">Lançamentos</a>
                         </a>
                         <a class="nav-item">
                             <a class="nav-link" href="#destaques">Destaques</a>
@@ -46,18 +44,16 @@
                         </a>
                     </nav>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Pesquisar
+                        </button>
                     </form>
-
                 </div>
             </div>
         </nav>
 
         <main class="container">
-
-
-
             <section class="row lancamentos" id="lancamentos">
                 <h1 class="subtitle__lancamentos">Lançamentos</h1>
 
@@ -71,201 +67,132 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/xjjFCxurylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="row">
+                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/xjjFCxurylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col"></iframe>
+                                    <div class="col">
+                                        <h1>Sword Art Online: Progressive</h1>
+                                        <p>
+                                            <b>Sinopse:</b> Esta é uma história do tempo em que Asuna e Kirito ainda não eram conhecidos pelos respectivos nomes "Lightning Flash" e "The Black Swordsman". Na saga, o primeiro Jogo de Realidade Virtual para
+                                            Múltiplos Jogadores (VRMMORPG), chamado Sword Art Online (SAO), é lançado oficialmente em 6 de novembro de 2022. Seus jogadores, ainda eufóricos ao entrar no game, só percebem que ficaram presos quando o Game
+                                            Master os impede de encontrar uma saída. O Game Master lança ainda um alerta: "Não se deve brincar com este jogo." Em outras palavras: se um jogador perde a vida no game, morre também na vida real.
+                                        </p>
 
-                            </div>
-
-
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-
-                                    <h1>Sword Art Online: Progressive</h1>
-                                    <p><b>Sinopse:</b> Esta é uma história do tempo em que Asuna e Kirito ainda não eram conhecidos pelos respectivos nomes "Lightning Flash" e "The Black Swordsman". Na saga, o primeiro Jogo de Realidade Virtual para Múltiplos
-                                        Jogadores (VRMMORPG), chamado Sword Art Online (SAO), é lançado oficialmente em 6 de novembro de 2022. Seus jogadores, ainda eufóricos ao entrar no game, só percebem que ficaram presos quando o Game Master os impede
-                                        de encontrar uma saída. O Game Master lança ainda um alerta: "Não se deve brincar com este jogo." Em outras palavras: se um jogador perde a vida no game, morre também na vida real.
-
-                                    </p>
-
-                                    <div>
-                                        <span><b>Diretor:</b> Ayako Kōno</span>
-                                        <span><b>Estreia:</b> 2022</span>
+                                        <div>
+                                            <span><b>Diretor:</b> Ayako Kōno</span>
+                                            <span><b>Estreia:</b> 2022</span>
+                                        </div>
+                                        <div class="avaliacao">
+                                            <p>Avaliação:</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
                                     </div>
-
-
-                                    <div class="avaliacao">
-                                        <p>Avaliação:</p>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-
                                 </div>
-
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/bNl80K-iLs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="row">
+                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/bNl80K-iLs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col"></iframe>
+                                    <div class="col">
+                                        <h1>Slime Movie: Scarlet Bonds</h1>
+                                        <p>
+                                            <b>Sinopse:</b> A trama irá se passar num novo país chamado Razha, localizado a oeste da cidade de Tempest. Rimuru e os seus companheiros depressa se vão envolver numa conspiração em torno de uma jovem dotada
+                                            com um poder misterioso. O slime e o seu comandante Benimaru também encontram outro sobrevivente, um ogro chamado Hiiro que faz parte do passado de Benimaru.
+                                        </p>
 
-                            </div>
+                                        <div>
+                                            <span><b>Diretor:</b> Yasuhito Kikuchi, Atsushi
+                                                Nakayama</span>
+                                            <span><b>Estreia:</b> 2022</span>
+                                        </div>
 
-
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-
-                                    <h1>Slime Movie: Scarlet Bonds</h1>
-                                    <p><b>Sinopse:</b> A trama irá se passar num novo país chamado Razha, localizado a oeste da cidade de Tempest. Rimuru e os seus companheiros depressa se vão envolver numa conspiração em torno de uma jovem dotada com um
-                                        poder misterioso. O slime e o seu comandante Benimaru também encontram outro sobrevivente, um ogro chamado Hiiro que faz parte do passado de Benimaru.
-                                    </p>
-
-                                    <div>
-                                        <span><b>Diretor:</b> Yasuhito Kikuchi, Atsushi Nakayama</span>
-                                        <span><b>Estreia:</b> 2022</span>
+                                        <div class="avaliacao">
+                                            <p>Avaliação:</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
                                     </div>
-
-
-                                    <div class="avaliacao">
-                                        <p>Avaliação:</p>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-
                                 </div>
-
                             </div>
                         </div>
+
                         <div class="carousel-item">
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/aTpSx7ERT7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="row">
+                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/aTpSx7ERT7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col"></iframe>
+                                    <div class="col">
+                                        <h1>Jujutsu Kaisen 0</h1>
+                                        <p>
+                                            <b>Sinopse:</b> A hitória que deu origem a "Jujutsu Kaisen". O jovem Yuta Okkotsu ganha o controle de um espírito extremamente poderoso, então um grupo de feiticeiros o matriculam na Tokyo Jujutsu High School,
+                                            para ajudá-lo a controlar esse poder e também para ficar de olho nele.
+                                        </p>
 
-                            </div>
+                                        <div>
+                                            <span><b>Diretor:</b> Sunghoo Park</span>
+                                            <span><b>Estreia:</b> 2022</span>
+                                        </div>
 
-
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-
-                                    <h1>Jujutsu Kaisen 0</h1>
-                                    <p><b>Sinopse:</b> A hitória que deu origem a "Jujutsu Kaisen". O jovem Yuta Okkotsu ganha o controle de um espírito extremamente poderoso, então um grupo de feiticeiros o matriculam na Tokyo Jujutsu High School, para
-                                        ajudá-lo a controlar esse poder e também para ficar de olho nele.
-                                    </p>
-
-                                    <div>
-                                        <span><b>Diretor:</b> Sunghoo Park</span>
-                                        <span><b>Estreia:</b> 2022</span>
+                                        <div class="avaliacao">
+                                            <p>Avaliação:</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
-
-
-                                    <div class="avaliacao">
-                                        <p>Avaliação:</p>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-
                                 </div>
-
                             </div>
                         </div>
+
                         <div class="carousel-item">
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/In4qtVVMHnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="row">
+                                    <iframe width="100%" height="368" src="https://www.youtube.com/embed/In4qtVVMHnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col"></iframe>
+                                    <div class="col">
+                                        <h1>Suzume no Tojimari</h1>
+                                        <p>
+                                            <b>Sinopse:</b> A história é de uma jovem chamada Suzume, que vive em uma pequena cidade na região de Kyushu (região onde fica Nagasaki e Fukuoka). Um dia, ela encontra uma viajante procurando por uma porta,
+                                            e acaba indo com ela até as montanhas, onde há uma porta antiga em meio a ruínas modernas...
+                                        </p>
 
-                            </div>
+                                        <div>
+                                            <span><b>Diretor:</b> Makoto Shinkai</span>
+                                            <span><b>Estreia:</b> 2022</span>
+                                        </div>
 
-
-                            <div class="col-12 col-sm-12 col-lg-6">
-                                <div>
-
-                                    <h1>Suzume no Tojimari</h1>
-                                    <p><b>Sinopse:</b> A história é de uma jovem chamada Suzume, que vive em uma pequena cidade na região de Kyushu (região onde fica Nagasaki e Fukuoka). Um dia, ela encontra uma viajante procurando por uma porta, e acaba
-                                        indo com ela até as montanhas, onde há uma porta antiga em meio a ruínas modernas...
-
-                                    </p>
-
-                                    <div>
-                                        <span><b>Diretor:</b> Makoto Shinkai</span>
-                                        <span><b>Estreia:</b> 2022</span>
+                                        <div class="avaliacao">
+                                            <p><b>Avaliação:</b> Nenhuma ainda</p>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
                                     </div>
-
-
-                                    <div class="avaliacao">
-                                        <p><b>Avaliação:</b> Nenhuma ainda</p>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-
                                 </div>
-
                             </div>
                         </div>
+
+                        <button class="carousel-control-prev button-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next button-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev button-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next button-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-
-                <!-- <div class="col-12 col-sm-12 col-lg-6">
-                    <div>
-                        <iframe width="100%" height="368" src="https://www.youtube.com/embed/xjjFCxurylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-
-                <div class="col-12 col-sm-12 col-lg-6">
-                    <div>
-
-                        <h1>Sword Art Online: Progressive</h1>
-                        <p><b>Sinopse:</b> Esta é uma história do tempo em que Asuna e Kirito ainda não eram conhecidos pelos respectivos nomes "Lightning Flash" e "The Black Swordsman". Na saga, o primeiro Jogo de Realidade Virtual para Múltiplos Jogadores
-                            (VRMMORPG), chamado Sword Art Online (SAO), é lançado oficialmente em 6 de novembro de 2022. Seus jogadores, ainda eufóricos ao entrar no game, só percebem que ficaram presos quando o Game Master os impede de encontrar uma
-                            saída. O Game Master lança ainda um alerta: "Não se deve brincar com este jogo." Em outras palavras: se um jogador perde a vida no game, morre também na vida real.
-
-                        </p>
-
-                        <div >
-                            <span><b>Diretor:</b> Ayako Kōno</span>
-                            <span><b>Estreia:</b> 2022</span>
-                        </div>
-
-
-                        <div class="avaliacao">
-                            <p>Avaliação:</p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-
-                    </div>
-
-                </div> -->
-
             </section>
 
             <section class="row destaque" id="destaques">
@@ -273,83 +200,117 @@
                     <h1>Destaques</h1>
                 </div>
 
-
                 <div class="col-6 categoria">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categoria:
+                            Categorias
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button">Shounen</button></li>
-                            <li><button class="dropdown-item" type="button">Isekai</button></li>
-                            <li><button class="dropdown-item" type="button">Slice of Life</button></li>
+                            <li>
+                                <button class="dropdown-item" type="button">Shounen</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Isekai</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    Slice of Life
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-3 col-sm-12 col-md-6">
                     <a href="https://www.youtube.com/watch?v=xjjFCxurylA&feature=emb_imp_woyt&ab_channel=SonyPicturesBrasil" title="Trailer SAO: Progressive" target="_blank">
-                        <img src="assets\saoprogressivet.jpg" class="img-destaque" alt="">
+                        <img src="assets/saoprogressivet.jpg" class="img-destaque" alt="" />
                     </a>
                 </div>
 
                 <div class="col-12 col-lg-3 col-sm-12 col-md-6">
                     <a href="https://www.youtube.com/watch?v=bNl80K-iLs0&ab_channel=JPAnime" title="Trailer do Slime" target="_blank">
-                        <img src="assets\tenseishitaraslimedattakent.jpg" class="img-destaque" alt="">
+                        <img src="assets/tenseishitaraslimedattakent.jpg" class="img-destaque" alt="" />
                     </a>
                 </div>
 
                 <div class="col-12 col-lg-3 col-sm-12 col-md-6">
                     <a href="https://www.youtube.com/watch?v=-iun6KPT4SM&ab_channel=AnimeHype%E3%82%A2%E3%83%8B%E3%83%A1%E6%97%A5%E6%9C%AC" title="Trailer Jujutsu Kaisen 0" target="_blank">
-                        <img src="assets\jjk0t.jpg" class="img-destaque" alt="">
+                        <img src="assets/jjk0t.jpg" class="img-destaque" alt="" />
                     </a>
                 </div>
 
                 <div class="col-12 col-lg-3 col-sm-12 col-md-6">
                     <a href="https://www.youtube.com/watch?v=In4qtVVMHnA&ab_channel=JPAnime" title="Trailer Suzume no Tojimari" target="_blank">
-                        <img src="assets\suzumenotojimarit.jpg" class="img-destaque" alt="">
+                        <img src="assets/suzumenotojimarit.jpg" class="img-destaque" alt="" />
                     </a>
                 </div>
 
-                <div class="col-12 col-lg-3 col-sm-12 col-md-6">
-                    <a href="https://www.youtube.com/watch?v=bFLt45xK3kU&ab_channel=IGN" title="Trailer Dragon Ball Super" target="_blank">
-                        <img src="assets\dbst.jpg" class="img-destaque" alt="">
-                    </a>
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-lg-3 col-sm-12 col-md-6">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=bFLt45xK3kU&ab_channel=IGN" title="Trailer Dragon Ball Super" target="_blank">
+                                        <img src="assets/dbst.jpg" class="img-destaque" alt="" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-sm-12 col-md-6">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=asHaHwMkViU" title="Trailer Black Clover" target="_blank">
+                                        <img src="assets/blackcovert.jpg" class="img-destaque" alt="" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-sm-12 col-md-6">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=ChsLmEpdNrI&ab_channel=CrunchyrollCollection" title="Trailer One Piece: Red" target="_blank">
+                                        <img src="assets/onepiecet.jpg" class="img-destaque" alt="" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-sm-12 col-md-6">
+                            <div class="collapse multi-collapse" id="multiCollapseExample4">
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=v_Y_wFpe5vQ&ab_channel=AnimeHype%E3%82%A2%E3%83%8B%E3%83%A1%E6%97%A5%E6%9C%AC" title="Trailer Madoka: Walpurgis no Kaiten" target="_blank">
+                                        <img src="assets/madokat.jpg" class="img-destaque" alt="" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-funcional">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"> Carregar mais
+                            destaques</button>
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-sm-12 col-md-6">
-                    <a href="https://www.youtube.com/watch?v=asHaHwMkViU" title="Trailer Black Clover" target="_blank">
-                        <img src="assets\blackcovert.jpg" class="img-destaque" alt="">
-                    </a>
-                </div>
-
-                <div class="col-12 col-lg-3 col-sm-12 col-md-6">
-                    <a href="https://www.youtube.com/watch?v=ChsLmEpdNrI&ab_channel=CrunchyrollCollection" title="Trailer One Piece: Red" target="_blank">
-                        <img src="assets\onepiecet.jpg" class="img-destaque" alt="">
-                    </a>
-                </div>
-
-                <div class="col-12 col-lg-3 col-sm-12 col-md-6">
-                    <a href="https://www.youtube.com/watch?v=v_Y_wFpe5vQ&ab_channel=AnimeHype%E3%82%A2%E3%83%8B%E3%83%A1%E6%97%A5%E6%9C%AC" title="Trailer Madoka: Walpurgis no Kaiten" target="_blank">
-                        <img src="assets\madokat.jpg" class="img-destaque" alt="">
-                    </a>
-                </div>
-
-                <div class="botao-funcional">
-                    <button class="botao-filmes"><i class="fa-solid fa-plus"></i> Carregar mais filmes</button>
-                </div>
 
             </section>
-
 
             <section class="row avaliacoes" id="avaliacoes">
                 <h1>Avaliações</h1>
 
                 <div class="col-12 col-sm-12 col-lg-4 col-md-4 avaliador">
-                    <img src="assets\davi.jpg" alt="">
+                    <img src="assets/davi.jpg" alt="" />
                     <h1>Davi</h1>
-                    <p>Não existem estrelas suficientes para destacar o quão grande e importante e fenomenal e espetacular Dragon Ball é para as vidas que estão na Terra. Espero que os produtores e o estudio que estão fazendo essa grandiosidade que é O DRAGON
-                        BALL, não estraguem ele com a ******** do 3D. Assim concluo que não existe coisa melhor que Dragon Ball, nem o que você está pensando agora, que é exatamente o que você pensando agora.</p>
+                    <p>
+                        Não existem estrelas suficientes para destacar o quão grande e importante e fenomenal e espetacular Dragon Ball é para as vidas que estão na Terra. Espero que os produtores e o estudio que estão fazendo essa grandiosidade que é O DRAGON BALL, não estraguem
+                        ele com a ******** do 3D. Assim concluo que não existe coisa melhor que Dragon Ball, nem o que você está pensando agora, que é exatamente o que você pensando agora.
+                    </p>
                     <div>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -358,14 +319,12 @@
                         <i class="fa-solid fa-star"></i>
                         <span>29/03/2022</span>
                     </div>
-
                 </div>
 
-                <div class="col-12 col-sm-12 col-lg-4 col-md-4 avaliador__2">
-                    <img src="assets\koarium777.gif" alt="">
+                <div class="col-12 col-sm-12 col-lg-4 col-md-4 avaliador__meio">
+                    <img src="assets/koarium777.gif" alt="" />
                     <h1>koarium777</h1>
-                    <p> sem cometarios
-                    </p>
+                    <p>sem cometarios</p>
                     <div>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
@@ -374,13 +333,13 @@
                         <i class="fa-regular fa-star"></i>
                         <span>01/01/2022</span>
                     </div>
-
                 </div>
 
                 <div class="col-12 col-sm-12 col-lg-4 col-md-4 avaliador">
-                    <img src="assets\molotovy.png" alt="">
+                    <img src="assets/molotovy.png" alt="" />
                     <h1>molotovy</h1>
-                    <p>Não sei o porque Black Clover é tão mal visto pelo público, mesmo não tendo uma animação tão boa, tem história boa, lutas boa, gritaria boa, o que mais a gente espera de um anime? Seus ****** ***** **********
+                    <p>
+                        Não sei o porque Black Clover é tão mal visto pelo público, mesmo não tendo uma animação tão boa, tem história boa, lutas boa, gritaria boa, o que mais a gente espera de um anime? Seus ****** ***** **********
                     </p>
                     <div>
                         <i class="fa-solid fa-star"></i>
@@ -390,19 +349,82 @@
                         <i class="fa-regular fa-star"></i>
                         <span>05/04/2022</span>
                     </div>
-
                 </div>
 
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-lg-4 avaliador">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
 
+                                <div>
+                                    <img src="assets/ghosst.png" alt="" />
+                                    <h1>Ghosst</h1>
+                                    <p>
+                                        Anime muito bom, ótima interação com o público, porém muito filler.
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>12/11/2021</span>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-4 avaliador">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
 
+                                <div>
+                                    <img src="assets/aragorn.jpg" alt="" />
+                                    <h1>Aragorn</h1>
+                                    <p>
+                                        Gostei muito da arte do anime, as lutas são muito boas e a história é bem empolgante.
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>02/02/2022</span>
+                                    </div>
+                                </div>
 
-                <div class="botao-funcional">
-                    <button class="botao-avaliacoes"><i class="fa-solid fa-plus"></i> Carregar mais avaliações</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-4 avaliador">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+
+                                <div>
+                                    <img src="assets/pedro.gif" alt="" />
+                                    <h1>pedro</h1>
+                                    <p>
+                                        bom
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>03/09/2021</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="button-funcional">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"> Carregar mais
+                            avaliações</button>
+                    </div>
                 </div>
 
             </section>
-
 
             <section class="row entrevistas" id="entrevistas">
                 <h1>Entrevistas & Making of</h1>
@@ -415,12 +437,10 @@
                     <div>
                         <h5><b>Filme:</b> My Hero Academia: Heroes Rising</h5>
                         <span><b>Diretores:</b> Kōhei Horikoshi, Kenji Nagasaki</span>
-                        <br>
+                        <br />
                         <span><b>Estreia:</b> 20/12/2019</span>
                     </div>
-
                 </div>
-
 
                 <div class="col-12 col-lg-4 col-sm-12 entrevista-all">
                     <div>
@@ -430,7 +450,7 @@
                     <div>
                         <h5><b>Filme:</b> Demon Slayer: Mugen Train</h5>
                         <span><b>Diretor:</b> Haruo Sotozaki</span>
-                        <br>
+                        <br />
                         <span><b>Estreia:</b> 13/05/2021</span>
                     </div>
                 </div>
@@ -442,104 +462,146 @@
                     <div>
                         <h5><b>Filme:</b> Dragon Ball Super: Broly</h5>
                         <span><b>Diretor:</b> Tatsuya Nagamine</span>
-                        <br>
+                        <br />
                         <span><b>Estreia:</b> 03/01/2019</span>
                     </div>
                 </div>
 
-                <div class="botao-funcional">
-                    <button class="botao-filmes"><i class="fa-solid fa-plus"></i> Carregar mais filmes</button>
-                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-sm-12 entrevista-all">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
 
+                                <div>
+                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/yVBVzBLmMX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div>
+                                    <h5><b>Filme:</b> Spirited Away (A Viagem de Chihiro)</h5>
+                                    <span><b>Diretor:</b> Hayao Miyazaki</span>
+                                    <br />
+                                    <span><b>Estreia:</b> 20/07/2001</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-12 entrevista-all">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+
+                                <div>
+                                    <iframe width="100%" height="230px" src="https://www.youtube.com/embed/fgZnu9tgwYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div>
+                                    <h5><b>Filme:</b> The Last: Naruto</h5>
+                                    <span><b>Diretor:</b> Tsuneo Kobayashi</span>
+                                    <br />
+                                    <span><b>Estreia:</b> 28/05/2015</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-funcional">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"> Carregar mais
+                            avaliações</button>
+                    </div>
+                </div>
             </section>
 
             <section class="row" id="novidades">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 novidades ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 novidades">
                     <h1 class="subtitle">Novidades</h1>
                     <div class="materia">
                         <div class="img-materia">
-                            <img src="assets\newsfmab.jpg" class="" alt="" />
+                            <img src="assets/newsfmab.jpg" class="" alt="" />
                         </div>
                         <div class="text-materia">
                             <a href="https://criticalhits.com.br/anime/fullmetal-alchemist-brotherhood-os-15-alquimistas-mais-poderosos/" title="FMAB - Os 15 alquimistas mais poderosos" target="_blank">
                                 <h5>FMAB - Os 15 alquimistas mais poderosos</h5>
                             </a>
-                            <p>FullMetal Alchemist Brotherhood é um dos maiores animes de todos os tempos, portanto confira aqui os 15 alquimistas mais poderosos da obra, rankeados do mais fraco pro mais forte.
+                            <p>
+                                FullMetal Alchemist Brotherhood é um dos maiores animes de todos os tempos, portanto confira aqui os 15 alquimistas mais poderosos da obra, rankeados do mais fraco pro mais forte.
                             </p>
                         </div>
                     </div>
 
-                    <div class="materia__2">
+                    <div class="materia__meio">
                         <div class="img-materia">
-
-                            <img src="assets\sololeveling.jpg" alt="" />
-
+                            <img src="assets/sololeveling.jpg" alt="" />
                         </div>
                         <div class="text-materia">
                             <a href="https://ultimatodobacon.com/solo-leveling-o-ultimato/" title="Solo Leveling chega ao fim - O Ultimato" target="_blank">
                                 <h5>Solo Leveling - infelizmente chega ao fim</h5>
                             </a>
-                            <p>Solo Leveling acompanha a história de Sung Jin-Woo, um caçador. No universo de Solo Leveling, anos atrás surgiram portais que conectavam o mundo a Dungeons repleta de monstros. Para poder combater os perigos dos portais, humanos
-                                foram selecionados através do despertar, se tornando caçadores...</p>
+                            <p>
+                                Solo Leveling acompanha a história de Sung Jin-Woo, um caçador. No universo de Solo Leveling, anos atrás surgiram portais que conectavam o mundo a Dungeons repleta de monstros. Para poder combater os perigos dos portais, humanos foram selecionados através
+                                do despertar, se tornando caçadores...
+                            </p>
                         </div>
                     </div>
 
                     <div class="materia">
                         <div class="img-materia">
-                            <img src="assets\newsseinenmanga.jpg" alt="" />
+                            <img src="assets/newsseinenmanga.jpg" alt="" />
                         </div>
                         <div class="text-materia">
                             <a href="https://skdesu.com/animes-mangas-seinen-pesados-melhores/" title="MELHORES MANGÁS SEINEN" target="_blank">
                                 <h5>MELHORES MANGÁS E ANIMES SEINEN</h5>
                             </a>
-                            <p>Para a galera que já se cansou de ler aqueles mangás com um tom leve e sorridente, os animes e mangás seinen são uma ótima opção já que eles uma pegada muito mais dramática e pesada, o que acaba impactando muito no leitor.</p>
+                            <p>
+                                Para a galera que já se cansou de ler aqueles mangás com um tom leve e sorridente, os animes e mangás seinen são uma ótima opção já que eles uma pegada muito mais dramática e pesada, o que acaba impactando muito no leitor.
+                            </p>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 sobre">
                     <h1 class="subtitle">Sobre</h1>
                     <div>
-                        <p>Sou aluno da PUC Minas e estou cursando Engenharia de Software, lá tenho uma disciplina que chama "Desenvolvimento em Interfaces Web" (DIW). Meu professor enviou uma tarefa com um layout a ser seguido onde os alunos usariam HTML
-                            e CSS (com ou sem Bootstrap).
+                        <p>
+                            Sou aluno da PUC Minas e estou cursando Engenharia de Software. Tenho uma disciplina chamada "Desenvolvimento em Interfaces Web" (DIW) e meu professor pediu uma tarefa a qual os alunos teriam que criar um layout utilizando HTML e CSS (com ou sem Bootstrap).
                         </p>
                     </div>
 
                     <div class="editorial">
                         <h1 class="subtitle">Editorial</h1>
-                        <p><img src="assets\personicon.png" class="editorial-icon"> <b>Aluno:</b> Mateus Estevão de Souza
+                        <p>
+                            <img src="assets/personicon.png" class="editorial-icon" />
+                            <b>Aluno:</b> Mateus Estevão de Souza
                         </p>
-                        <p><img src="assets\personicon.png" class="editorial-icon"> <b>Instituição:</b> PUC Minas</p>
-                        <p><img src="assets\personicon.png" class="editorial-icon"> <b>Disciplina:</b> Desenvolvimento em Intefaces Web</p>
+                        <p>
+                            <img src="assets/personicon.png" class="editorial-icon" />
+                            <b>Instituição:</b> PUC Minas
+                        </p>
+                        <p>
+                            <img src="assets/personicon.png" class="editorial-icon" />
+                            <b>Disciplina:</b> Desenvolvimento em Intefaces Web
+                        </p>
                     </div>
 
-                    <div class="redes-sociais subtitle">
+                    <div class="subtitle">
                         <h1>Redes Sociais</h1>
-                        <a href="https://www.linkedin.com/in/mateuseds/" title="LinkedIn" target="_blank">
-                            <img src="assets\linkedin.svg" class="social">
-                        </a>
-                        <a href="https://github.com/mateuseds" title="GitHub" target="_blank">
-                            <img src="assets\github.svg" class="social">
-                        </a>
-
+                        <div class="redes-sociais">
+                            <a href="https://www.linkedin.com/in/mateuseds/" title="LinkedIn" target="_blank">
+                                <img src="assets/linkedin.svg" class="social" />
+                            </a>
+                            <a href="https://github.com/mateuseds" title="GitHub" target="_blank">
+                                <img src="assets/github.svg" class="social" />
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </section>
-
         </main>
 
         <footer class="footer">
-            <p>
-                Copyright © 2022. All rights reserved - PUC MINAS
-            </p>
+            <p>Copyright © 2022. All rights reserved - PUC MINAS</p>
         </footer>
     </div>
 
     <script src="https://kit.fontawesome.com/2f4b8f5acd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
